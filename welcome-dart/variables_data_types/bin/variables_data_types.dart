@@ -43,4 +43,38 @@ void main(List<String> arguments) {
   dynamicVariable = myText;
 
   print('Var: $oneVariable - Dynamic: $dynamicVariable');
+
+  /*
+    Exercise:
+    This program calculates from KG to LB and viceversa
+
+  */
+
+  int celsiusDegrees = 10;
+
+  // Variables
+  double pound;
+  double kilogram;
+
+  pound = kgLb(34.2);
+  kilogram = lbKg(5);
+
+  print('Lb: $pound');
+  print('Kb: $kilogram');
+}
+
+// ignore: slash_for_doc_comments
+/**
+ * @params
+ * @kg -> Kilogram value converted to pound
+ * 
+ * Result the value of the pound
+ */
+
+double kgLb(double kg){
+  return (kg * 2.20462);
+}
+
+double lbKg(double lib){
+  return (lib * 0.453592);
 }
