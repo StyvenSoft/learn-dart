@@ -61,6 +61,37 @@ void main(List<String> arguments) {
 
   print('Lb: $pound');
   print('Kb: $kilogram');
+
+  // Useful methods of type String
+
+  String email;
+  String message;
+  String emailTwo;
+  String newMessage;
+
+  email = 'myemail@gmail.com';
+  emailTwo = 'twoEmail@hotmail.com  ';
+
+  print(email.contains('@'));
+  print(email.endsWith('.com'));
+
+  message = email.contains('gmail') ? 'It is an email' : 'It is not an email';
+  newMessage = emailTwo.trim();
+
+  print(message);
+  print(newMessage);
+
+  // Upper and lower case text
+
+  print(newMessage.toLowerCase());
+  print(newMessage.toUpperCase());
+
+  // Replace one value with another
+
+  print(email.replaceAll('gmail', 'hotmail'));
+
+  print('the length of the mail is: ${email.length}');
+  print(email.substring(2, 8));
 }
 
 // ignore: slash_for_doc_comments
