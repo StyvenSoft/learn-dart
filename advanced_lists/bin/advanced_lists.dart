@@ -25,5 +25,32 @@ void main(List<String> arguments) {
 
   students.insert(3, 'Lucia');
   print(students);
+
+  students.insertAll(2, ['Jose', 'Ricardo', 'Lina']);
+  print('The studends add: $students');
+
+  students.add('Fernando');
+  print('New students: $students');
   
+  // Remove items from a list
+
+  // Delete by index
+  students.removeAt(2);
+
+  // Delete by name
+  students.remove('Daniel');
+
+  // Delete by search
+  students.removeWhere((student) => student == 'Alejandra');
+
+  print(students);
+
+  // Print list and position
+
+  print(students.asMap());
+
+  // Join elements
+
+  print(students.join('--'));
+
 }
