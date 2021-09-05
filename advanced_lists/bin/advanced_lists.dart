@@ -53,4 +53,15 @@ void main(List<String> arguments) {
 
   print(students.join('--'));
 
+  // Search for characters in the list
+
+  List namesWithL = students.where((student) => student.startsWith('L')).toList();
+  print('Names with L: $namesWithL');
+
+  List namesWithO = students.where((student) => student.endsWith('o')).toList();
+  print('Names ending with o: $namesWithO');
+
+  List namesWithA = students.where((student) => student.contains('a')).toList();
+  print('Names containing A: $namesWithA');
+
 }
