@@ -22,4 +22,17 @@ void main(List<String> arguments) {
 
   print(dataDictionary['Elixir']);
 
+  // ignore: omit_local_variable_types
+  Map<int, String> mapCountries = new Map();
+
+  mapCountries.addAll({1 : 'Paraguay'});
+  mapCountries.addAll({2 : 'Argentina'});
+  mapCountries.addAll({3 : 'Brazil'});
+
+  mapCountries.addAll({
+    4: 'Colombia',
+    5: 'Ecuador'
+  });
+
+  print(mapCountries);
 }
