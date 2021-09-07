@@ -35,4 +35,28 @@ void main(List<String> arguments) {
   });
 
   print(mapCountries);
+
+  // Advanced Maps
+
+  Map<int, String> mapStudents = {1: 'Raul', 2: 'Dario', 3: 'Lukas', 4: 'Valentina'};
+
+  mapStudents.forEach((key, student) {
+    print('$key $student');
+  });
+
+  mapStudents.update(2, (student) => 'Fransisco');
+  print(mapStudents);
+
+  // Delete a key
+  mapStudents.remove(1);
+  print(mapStudents);
+
+  // Delete key by search
+
+  mapStudents.removeWhere((key, student) => key == 3);
+
+  mapStudents.removeWhere((key, student) => student == 'Valentina');
+
+  print(mapStudents);
+
 }
