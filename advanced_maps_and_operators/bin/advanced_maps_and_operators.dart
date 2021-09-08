@@ -59,4 +59,34 @@ void main(List<String> arguments) {
 
   print(mapStudents);
 
+  // arithmetic operators
+
+  double celcius, farenheit = 54;
+
+  celcius = (farenheit - 32) / 1.8;
+
+  print('Celsius degrees: $celcius');
+
+  celcius += 10;
+  celcius -= 5;
+
+  print('New celsius degrees: $celcius');
+
+  print('Celsius degrees: $celcius');
+  
+  int numberA = 313, numberB = 511, residue;
+
+  residue = numberA % numberB;
+
+  print('Residue: $residue'); 
+
+  // Test type operators
+
+  // ignore: omit_local_variable_types
+  String paragraph = 'Dart is a client-optimized';
+  int number = 234;
+
+  (paragraph is String) ? print(paragraph) : print('it is not a string');
+  (number is! int) ? print(number) : print('it is not a int');
+
 }
