@@ -35,4 +35,33 @@ void main(List<String> arguments) {
   } else {
     print('You do not have access');
   }
+
+  // ignore: omit_local_variable_types
+  List<String> countriesList = ['Colombia', 'España', 'Argentina', 'Mexico'];
+
+  for (var i = 0; i < countriesList.length; i++) {
+    print('Country: ${countriesList[i]}');
+  }
+
+  var numberTable = 9;
+
+  for (var i = 0; i <= 10; i++) {
+    print('$i x $numberTable = ${i * numberTable }');
+  }
+
+  // ignore: omit_local_variable_types
+  List<int> integerListTwo = [5, 8, 1, 3, 41, 32, 71, 34, 21];
+  var counter = 0;
+
+  while (counter < integerListTwo.length) {
+    print('$counter x ${integerListTwo[counter]} = ${counter * integerListTwo[counter]}');
+    counter++;
+  }
+
+  counter = 0;
+  do {
+    print('Number: ${integerList[counter]}');
+    counter++;
+  } while (counter < integerList.length);
+
 }
